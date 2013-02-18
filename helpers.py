@@ -8,7 +8,7 @@ connection = False
 db = False
 try:
     connection = pymongo.Connection()
-    db = connection.twitpol
+    db = connection.twitporn
 except pymongo.errors.AutoReconnect:
     print "ERROR CONNECTING TO DATABASE! Is mongod running?"
 
